@@ -1,0 +1,38 @@
+{
+	"iotConfigs": [
+		{
+			"deviceName": "device1",
+			"type":"IOTDEVICE",
+			"secretKey": "HostName=iothubtotestazure.azure-devices.net;DeviceId=azureIottestdemodevice;SharedAccessKey=LDg3uLHWRrLVAlUUc/dq4StGGFIg/uZV3WKxfxvtK5o=",
+			"schedulerConfig": [
+				{
+					"parameterName": "temperature",
+					"entityName": "patient1",
+					"period": 2000
+				},
+				{
+					"parameterName": "humidity",
+					"entityName": "patient1",
+					"period": 2000
+				}
+			]
+		},
+		{
+			"deviceName": "device2",
+			"type":"IOTDEVICE",
+			"secretKey": "HostName=iothubtotestazure.azure-devices.net;DeviceId=iotdevicetest;SharedAccessKey=Xo7sArNrVr+s7UnWK/1BFhsC1y/ov9LNo+QbtTg+fsM=",
+			"schedulerConfig": [
+				{
+					"parameterName": "temperature",
+					"entityName": "patient2",
+					"period": 2000
+				},
+				{
+					"parameterName": "humidity",
+					"entityName": "patient2",
+					"period": 2000
+				}
+			]
+		}
+	]
+}
