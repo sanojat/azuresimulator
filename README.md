@@ -1,3 +1,14 @@
+1. How do run the Application
+
+The application azuresimulator is simulator to sent massage from IoT device to hub.This is spring boot application and default deployment is on tomcat server at port 8080.
+
+pre installation set up required
+	1.java 1.8 or greater
+	2.maven - build tool 
+	3.postman - to call rest endpoint
+
+Running application,run as java application
+main class : com.azure.learn.simulator.AzureSimulator
 
 1##########################
 Rest endpoint to thread list configured in configuration.json
