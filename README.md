@@ -10,6 +10,47 @@ pre installation set up required
 Running application,run as java application
 main class : com.azure.learn.simulator.AzureSimulator
 
+configuration file : resources/configuration.json and this can be edited as per our requirement 
+
+		{
+			"iotConfigs": [
+				{
+					"deviceName": "device1",
+					"type":"IOTDEVICE",
+					"secretKey": "<iot device secret key >",
+					"schedulerConfig": [
+						{
+							"parameterName": "temperature",
+							"entityName": "patient1",
+							"period": 2000
+						},
+						{
+							"parameterName": "humidity",
+							"entityName": "patient1",
+							"period": 2000
+						}
+					]
+				},
+				{
+					"deviceName": "device2",
+					"type":"IOTDEVICE",
+					"secretKey":"<iot device secret key >",
+					"schedulerConfig": [
+						{
+							"parameterName": "temperature",
+							"entityName": "patient2",
+							"period": 2000
+						},
+						{
+							"parameterName": "humidity",
+							"entityName": "patient2",
+							"period": 2000
+						}
+					]
+				}
+			]
+		}
+
 1##########################
 Rest endpoint to thread list configured in configuration.json
 URL: 
